@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+    $(function() {
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+      items: 5,
+      margin: 15,
+      loop: false,
+    });
+  });
+
+
+  $(document).ready(function(){
+    $('.carousel').slick({
+    slidesToShow: 3,
+    dots:true,
+    centerMode: true,
+    });
+  });
+
+    </script>
+</head>
+<body>
+
+    <!-- SELECT 2 -->
+
+    <div class="jumbotron">
+      <h2>Select 2</h2>
+        <div class="container">
+          <div class="col-md-6">
+            <label>Pilih Makanan (Multiple Select 2)</label>
+            <select id="multiple" class="js-states form-control" multiple>
+              <option>Indomie</option>
+              <option>Nasi Goreng</option>
+              <option>Bakso</option>
+              <option>Eskrim</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+    <!-- OWL CAROUSEL  -->
+
+    <div class="home-demo">
+        <h3> OWL Carousel</h3>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <h2>Indomie</h2>
+          </div>
+          <div class="item">
+            <h2>Nasi Goreng</h2>
+          </div>
+          <div class="item">
+            <h2>Bakso</h2>
+          </div>
+          <div class="item">
+            <h2>Eskrim</h2>
+          </div>
+          <div class="item">
+            <h2>Mie Tiaw</h2>
+          </div>
+          <div class="item">
+            <h2>Gorengan</h2>
+          </div>
+          <div class="item">
+            <h2>Es Buah</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLICK CAROUSEL  -->
+
+      <h2>Slick Carousel</h2>
+      <div class="wrapper"> 
+        
+        <div class="carousel">
+          <div><img src="https://picsum.photos/300/200?random=1"></div>
+          <div><img src="https://picsum.photos/300/200?random=2"></div>
+          <div><img src="https://picsum.photos/300/200?random=3"></div>
+          <div><img src="https://picsum.photos/300/200?random=4"></div>
+          <div><img src="https://picsum.photos/300/200?random=5"></div>
+          <div><img src="https://picsum.photos/300/200?random=6"></div>
+        </div>
+      </div>
+
+      <div class="kotak">
+        <h4>Nama : Muhammad Sir Kafi El Migwar</h4>
+        <h4>NIM : 32019116105</h4>
+        <h4>Prodi & kelas : D3 Teknik Informatika Kelas 4D</h4>
+      </div>
+
+      
+    <script>
+        $("#multiple").select2({
+            allowClear: true
+        });
+    </script>
+
+
+</body>
+</html>
